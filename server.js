@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
   res.send("This is working fine");
 });
 //Setup Routers;
+app.use("/api/user", require("./router/api/user"));
 
 //Listening PORT;
 const PORT = process.env.PORT || 5000;

@@ -7,6 +7,7 @@ const databaseConnection = async () => {
     await mongoose.connect(db, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
+      useCreateIndex: true,
     });
     console.log("Successfully connected to ATLAS server");
   } catch (err) {
